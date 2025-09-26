@@ -5,6 +5,8 @@ body {
 canvas {
   background-color: lightblue;
   margin: 20px;
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpspZxv-ydKfY1GZ8fZZVvu0GK_JC6Vd0WuzQOpK2RtJgSBkg:https://hdwallpaperim.com/wp-content/uploads/2017/08/24/100192-simple_background.jpg&s);
+  background-size: contain;
 }
 
 img {

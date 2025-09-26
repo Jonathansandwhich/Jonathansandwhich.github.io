@@ -8,7 +8,7 @@
       .box {
         width: 70px;
         height: 70px;
-        background-color: teal;
+        background-color: rgb(131, 22, 22);
         font-size: 300%;
         text-align: center;
         user-select: none;
@@ -18,9 +18,10 @@
         /* Change me! */
         left: 0px;
       }
-
+      
       .board {
         height: 100vh;
+        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAL0AAAELCAMAAAC77XfeAAAAA1BMVEWdwYP04SLsAAAASElEQVR4nO3BMQEAAADCoPVPbQ0PoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADeDcYqAAE00FRDAAAAAElFTkSuQmCC);
       }
     </style>
     <!-- 	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> -->
@@ -42,7 +43,7 @@
         var box = jQuery(".box"); // reference to the HTML .box element
         var board = jQuery(".board"); // reference to the HTML .board element
         var boardWidth = board.width(); // the maximum X-Coordinate of the screen
-
+        
         // update the boardWidth variable when the window is resized
         jQuery(window).on("resize", function () {
           boardWidth = board.width();
@@ -73,12 +74,12 @@
         var points = 0;
         var speed = 10;
 
-
         /**
          * This Function will be called 20 times/second.
          * Each time it is called, it should move the Box to a new location.
          * If the box drifts off the screen, turn it around!
          */
+        
         function update() {
           moveBoxTo(positionX);
         positionX = positionX + speed; 
@@ -102,7 +103,7 @@
           speed = 3 * points + 10;
 
         }
-
+        
 
         
       })();
