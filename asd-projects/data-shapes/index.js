@@ -94,10 +94,10 @@ $(document).ready(function () {
     var repeat = currentShape.repeat;
     handleBad(currentShape, repeat)
   }
-  function badDisplay() {
-    resetDisplay();
-    currentIndex = Math.floor(Math.random() * dataShapes.length);
-  } 
+  // function badDisplay() {
+  //   resetDisplay();
+  //   currentIndex = Math.floor(Math.random() * dataShapes.length);
+  // } 
 
   /////////////////////////////////////////////////
   // ALL OF YOUR CODE SHOULD GO ABOVE HERE ////////
