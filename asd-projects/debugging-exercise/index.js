@@ -80,7 +80,7 @@ function decideSpeed() {
 
 // this generates an id for a ghost given the ghost's number
 function getId(number) {
-  return "ghost" + number();
+  return "ghost" + number;
 }
 
 // this adds a ghost into the HTML
@@ -102,7 +102,7 @@ function addNewGhostElement(ghost, id) {
 //////////////////
 
 // this should move all of the ghosts
-function update() {
+function update () {
   // loop over the ghosts array. We use the maxGhosts variable instead of ghosts.length
   // to make seeing issues in the debugger slightly easier (in practice, you should use
   // ghosts.length, but do NOT change it here)
@@ -159,7 +159,7 @@ function bounceGhost(ghost) {
 
 // this redraws the ghost's position on the screen
 function updateGhostOnScreen(ghost) {
-  maxGhosts = 1;
+  maxGhosts = 10;
 
   // these lines redraw the ghost's position
   $(ghost.id).css("left", ghost.x);
