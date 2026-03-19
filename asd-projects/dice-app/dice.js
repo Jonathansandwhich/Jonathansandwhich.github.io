@@ -9,22 +9,19 @@ $("<div>")
   .css("left", 150)
   .appendTo("#die");
   
-  function makeDot(top, left, elementID){
+  function makeDot(_top, _left, _elementID) {
   $("<div>")
-  .css("height", 225)
-  .css("width", 75)
+  .css("height", 15)
+  .css("width", 15)
   .css("background-color", "black")
   .css("position", "absolute")
-  .css("top", top)
-  .css("left", left)
-  .css("boarder-radius", "50%")
-  .appendTo(elementID);
+  .css("top", 50)
+  .css("left", 50)
+  .appendTo("#die");
 }
-makeDot(212.5, 212.5, "#die");
-makeDot(87.5, 87.5, "#die");
-makeDot(337.5, 337.5, "#die");
 
-function rollDie(dieID) {
+
+function rollDie(_dieID) {
 var randomNum = Math.ceil(Math.random() * 6);
 console.log(randomNum);
 }
